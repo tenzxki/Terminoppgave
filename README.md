@@ -19,8 +19,7 @@
 *Jeg prøver å oppnå en applikasjon hvor folk med spillhobby kan vende til og skrive en positiv/negativ tilbakemelding. Dette kan gi ulike spillere en oppriktig mening på hva som er bra og dårlig med spillet, slik at spillere kan velge selv om de vil kjøpe spillet eller ikke. *
 
 **Brukerflyt:**\
-*Beskriv hvordan brukeren bruker løsningen -- fra startside til lagring
-av data.*
+*Du får opp registrasjon siden hvor du oppretter en bruker. Etter å ha registrert blir du tatt til hjemsiden med alle spillene. Her vil du se ulike spill med en gjennomsnittlig vurdering. Det vil være en Legg til spill knapp som vil ta deg til en form side hvor du skriver inn informasjon om spillet. Å klikke på et av spillene på hjemsiden vil du bli tatt til en annen form side hvor du skriver din anmeldelse og gir din stjernevurdering. Her står også info om spillet. Du kan også trykke Vis anmeldelser for å se hvilke tilbakemeldinger og vurdering ulike brukere har gitt. Hver side skal inneholde en Gå til hjemside knapp slik at du kan lett navigere tilbake. *
 
 **Teknologier brukt:**
 
