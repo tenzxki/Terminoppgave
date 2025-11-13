@@ -3,21 +3,20 @@
 
 ## 1. Forside
 
-**Prosjekttittel:**\
-**Navn:**\
-**Klasse:**\
-**Dato:**
+**Spillanmeldelse**\
+**Talha**\
+**2IMI**\
+**11.11.25**
 
 **Kort beskrivelse av prosjektet:**\
-*Skriv 2--4 setninger om hva applikasjonen gjør og hvilket tema den
-bygger på.*
+*Applikasjonen går ut på å skrive anmeldelse for ulike spill. Du registrer deg og kommer deretter i en fane med ulike spill, som du kan velge. Klikk på spillet du vil gi tilbakemelding på og skriv hva du vil. Det vil også er en gjennomsnittlig vurdering av spill ved bruk av stjerner. 
 
 ------------------------------------------------------------------------
 
 ## 2. Systembeskrivelse
 
 **Formål med applikasjonen:**\
-*Forklar hva du ønsket å oppnå med prosjektet.*
+*Jeg prøver å oppnå en applikasjon hvor folk med spillhobby kan vende til og skrive en positiv/negativ tilbakemelding. Dette kan gi ulike spillere en oppriktig mening på hva som er bra og dårlig med spillet, slik at spillere kan velge selv om de vil kjøpe spillet eller ikke. *
 
 **Brukerflyt:**\
 *Beskriv hvordan brukeren bruker løsningen -- fra startside til lagring
