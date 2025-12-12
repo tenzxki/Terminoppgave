@@ -70,28 +70,19 @@ Kanban holdt hjalp med å holde en tydelig struktur på arbeidet og gjorde det r
 
 **Tabeller:**\
 
+SELECT * FROM users
 Dette er hvordan tabellene ser ut:
-+----+----------+----------------+
+
 | id | username | password       |
-+----+----------+----------------+
-|  1 | talha    | Fotball2008    |
-|  2 | bigt     | mypass123      |
-+----+----------+----------------+
+  1    testuser    12345678
 
-+----+---------+---------+--------+------------------------------+
-| id | user_id | game_id | rating | comment                      |
-+----+---------+---------+--------+------------------------------+
-|  1 |   1     |   2     |   5    | Amazing game!                |
-|  2 |   2     |   1     |   3    | Fun but gets repetitive.     |
-+----+---------+---------+--------+------------------------------+
 
-+----+-----------------+----------------------+----------+-------------+--------------+-------------------------------+----------------+
+| id | game_id | username | rating | comment                      
+  1       1        user       4      Good game
+
+
 | id | name            | description          | genre    | developer   | release_year | cover_url                    | average_rating |
-+----+-----------------+----------------------+----------+-------------+--------------+-------------------------------+----------------+
-|  1 | Fortnite        | Battle royale game   | Shooter  | Epic Games  | 2017         | https://image.com/fort.png   | 4.5            |
-|  2 | Minecraft       | Sandbox building     | Sandbox  | Mojang      | 2011         | https://image.com/mc.png     | 5.0            |
-+----+-----------------+----------------------+----------+-------------+--------------+-------------------------------+----------------+
-
+  1    EA FC 26           Football simulator     Sport      EA sports        2025                                             4
 
 
 **SQL-eksempel:**
@@ -167,6 +158,7 @@ Dette er legg til spill siden hvor du skriver inn et spill og ulike ting om spil
 
 @app.route("/game/<int:game_id>", methods=["GET", "POST"])
 Dette er review siden. Her skriver du anmeldelse om spillet du valgte. 
+
 ------------------------------------------------------------------------
 
 ## 8. Sikkerhet og pålitelighet
