@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Library</title>
+</head>
+<body>
+
+<h1>Welcome to the Game Library</h1>
+<p><a href="/addgame">Add a New Game</a></p>
+<hr>
+
+<h2>Games:</h2>
+
+{% if games %}
+    {% for game in games %}
+        <div style="border:1px solid #ccc; padding:10px; margin-bottom:10px;">
+            <h3>{{ game.name }}</h3>
+            <p><strong>Genre:</strong> {{ game.genre }}</p>
+            <p><strong>Release Year:</strong> {{ game.release_year }}</p>
+            <p><strong>Developer:</strong> {{ game.developer }}</p>
+            <p><strong>Description:</strong> {{ game.description }}</p>
+
+            {% if game.cover_url %}
+                <p><img src="{{ game.cover_url }}" alt="{{ game.name }} Cover" width="150"></p>
+            {% endif %}
+
+            <p><strong>Average Rating:</strong>
+                {% if game.avg_rating %}
+                    {{ "%.1f"|format(game.avg_rating) }} / 5 stars
+                {% else %}
+                    No ratings yet
+                {% endif %}
+            </p>
+
+            <p><a href="/game/{{ game.id }}">Review</a></p>
+        </div>
+        <hr>
+    {% endfor %}
+{% else %}
+    <p>No games to show yet.</p>
+{% endif %}
+
+</body>
+</html>

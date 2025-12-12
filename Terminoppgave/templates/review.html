@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ game.name }}</title>
+</head>
+<body>
+
+<h1>{{ game.name }}</h1>
+<p>{{ game.description }}</p>
+<p><strong>Genre:</strong> {{ game.genre }}</p>
+<p><strong>Developer:</strong> {{ game.developer }}</p>
+<p><strong>Release Year:</strong> {{ game.release_year }}</p>
+
+<h3>Average Rating:</h3>
+<p>
+    {% if avg_rating %}
+         {{ "%.1f"|format(avg_rating) }}/5
+    {% else %}
+        No ratings yet
+    {% endif %}
+</p>
+
+<hr>
+
+<h2>Add a Review</h2>
+<form action="/game/{{ game.id }}" method="POST">
+    <label>Name:</label><br>
+    <input type="text" name="username" required><br><br>
+
+    <label>Rating (1-5):</label><br>
+    <input type="number" name="rating" min="1" max="5" required><br><br>
+
+    <label>Comment:</label><br>
+    <textarea name="comment" required></textarea><br><br>
+
+    <button type="submit">Submit Review</button>
+</form>
+
+<hr>
+
+<h2>Reviews</h2>
+{% if reviews %}
+    {% for review in reviews %}
+        <div style="border:1px solid #ccc; padding:10px; margin-bottom:10px;">
+            <p><strong>{{ review.username }}</strong></p>
+            <p>⭐ {{ review.rating }}/5</p>
+            <p>{{ review.comment }}</p>
+        </div>
+    {% endfor %}
+{% else %}
+    <p>No reviews yet.</p>
+{% endif %}
+
+<br>
+<a href="/home">Back to Home</a>
+
+</body>
+</html>

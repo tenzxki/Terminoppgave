@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Game</title>
+</head>
+<body>
+
+    <h1>Add a New Game</h1>
+
+    <form action="/addgame" method="POST">
+
+        <label>Game Title:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Description:</label><br>
+        <textarea name="description" required></textarea><br><br>
+
+        <label>Genre:</label><br>
+        <input type="text" name="genre" required><br><br>
+
+        <label>Developer:</label><br>
+        <input type="text" name="developer" required><br><br>
+
+        <label>Release Year:</label><br>
+        <input type="number" name="release_year" required><br><br>
+
+        <label>Cover Image URL:</label><br>
+        <input type="text" name="cover_url"><br><br>
+
+        <button type="submit">Add Game</button>
+    </form>
+
+    <br>
+    <a href="/home">Back to Home</a>
+
+</body>
+</html>
